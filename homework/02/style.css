@@ -1,0 +1,28 @@
+body{
+    background-color: #7ae88c;
+}
+h1{
+    text-shadow: 2px 2px 5px blue, -2px -2px 5px rgb(136, 0, 255);
+    margin:auto;
+    text-align: center;
+}
+
+form{
+    border: inset;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 25px 50px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+label{
+    color: brown;
+        
+}
+button{
+    border-radius: 40px;
+}
