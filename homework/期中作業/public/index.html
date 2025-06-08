@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>AI 聊天機器人</h1>
-    <textarea id="userInput" placeholder="輸入你的問題..."></textarea>
-    <button onclick="sendMessage()">送出</button>
-    <div id="response"></div>
-
+    <div class="chat-container">
+        <h1>🤖 AI 聊天機器人</h1>
+        <div class="chat-box" id="chatBox"></div>
+        <div class="input-area">
+            <textarea id="userInput" placeholder="輸入你的問題..."></textarea>
+            <button onclick="sendMessage()">送出</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
