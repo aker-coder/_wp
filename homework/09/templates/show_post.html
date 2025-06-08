@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ post.title }} -- by {{ post.username }}</h1>
+    <p>{{ post.body }}</p>
+    {% if user and post.username == user.username %}
+    <form action="/post/{{ post.id }}/delete" method="post" style="display:inline;">
+        <button type="submit" onclick="return confirm('確定要刪除嗎？')">刪除</button>
+    </form>
+    {% endif %}
+{% endblock %}
